@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;400;700;900&family=Roboto&display=swap');
+
+html {
+    --blue: 65, 124, 190;
+    --rgb-blue: rgb(var(--blue));
+    --orange: 242, 205, 87;
+    --rgb-orange: rgb(var(--orange));
+    --white: 255, 255, 255;
+    --rgb-white: rgb(var(--white));
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: var(--rgb-blue);
+}
+
+header {
+    height: 15rem;
+    width: 100%;
+
+}
+nav {
+/*     background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(var(--white),0.8) 0%, rgba(0,0,0,0) 100%); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background: var(--rgb-blue);
+}
+nav li {
+    list-style: none;
+    display: inline;
+}
+nav li:not(:last-of-type)::after {
+    content: '|';
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--rgb-white);
+}
+a {
+    color: var(--rgb-orange);
+    text-decoration: none;
+
+}
+.right-navbar {
+    
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h2 {
+    color: rgba(var(--white),0.15);
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.time {
+    font-size: 2rem;
+    color: rgba(var(--orange), 0.5);
+    padding-right: 1rem;
+    width: 100px;
+}
+
+.time::after {
+    content: '-';
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--rgb-white);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.schedule {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.schedule ul {
+    border-left: 5px solid rgba(var(--orange), 0.25);
+}
