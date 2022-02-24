@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    height: 14rem;
+    height: 15rem;
     width: 100%;
 
 }
@@ -169,19 +169,25 @@ h3 {
     z-index: 101;
 }
 
-.anchor {
-    padding-top: 17rem;
-    margin-top: -17rem;
+/* .anchor:target::before {
+    content: "";
+    display: block;
+    height: 19rem;
+    margin-top: -19rem;
+  } */
+
+html {
+    scroll-padding-top: 19rem; /* height of sticky header */
 }
 
 @media screen and (max-width: 1566px) {
     header {
         height: 16rem;
     }
-    .anchor {
-        padding-top: 19rem;
-        margin-top: -19rem;
+    html {
+        scroll-padding-top: 24rem; /* height of sticky header */
     }
+
 }
 @media screen and (max-width: 870px) {
     body {
