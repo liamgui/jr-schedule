@@ -9,6 +9,7 @@ html {
     --rgb-white: rgb(var(--white));
     margin: 0;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -20,7 +21,7 @@ body {
 }
 
 header {
-    height: 15rem;
+    height: 14rem;
     width: 100%;
 
 }
@@ -74,9 +75,7 @@ a {
 .logo {
     width: 200px;
 }
-.right-navbar {
 
-}
 .navbar {
     display: flex;
     align-items: center;
@@ -171,8 +170,8 @@ h3 {
 }
 
 .anchor {
-    padding-top: 14rem;
-    margin-top: -14rem;
+    padding-top: 17rem;
+    margin-top: -17rem;
 }
 
 @media screen and (max-width: 1566px) {
@@ -196,5 +195,11 @@ h3 {
     }
     .center-navbar {
         display: none;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .nav-1 ul li {
+        display: block;
     }
 }
