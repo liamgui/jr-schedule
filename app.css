@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    height: 15rem;
+    height: 19rem;
     width: 100%;
 
 }
@@ -182,10 +182,13 @@ html {
 
 @media screen and (max-width: 1566px) {
     header {
-        height: 16rem;
+        height: 17rem;
     }
     html {
-        scroll-padding-top: 24rem; /* height of sticky header */
+        scroll-padding-top: 19rem; /* height of sticky header */
+    }
+    h2 {
+        font-size: 2rem;
     }
 
 }
