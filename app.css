@@ -219,3 +219,20 @@ html {
     margin: 0;
     margin-bottom: -3rem;
 }
+
+body.konomi .overlay video {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 100000000000;
+    object-fit: cover;
+}
+
+body.konomi .overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
