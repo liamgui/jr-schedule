@@ -228,7 +228,11 @@ body.konomi .overlay video {
     object-fit: cover;
 }
 
+.overlay {
+    display: none;
+}
 body.konomi .overlay {
+    display: block;
     position: fixed;
     height: 100%;
     width: 100%;
